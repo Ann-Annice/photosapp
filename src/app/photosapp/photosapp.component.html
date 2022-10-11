@@ -1,0 +1,46 @@
+<app-navbar></app-navbar>
+
+ <div class="container">
+        <div class="row">
+            <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+
+                  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="https://png.pngtree.com/thumb_back/fw800/back_our/20190619/ourmid/pngtree-taobao-vector-creative-technology-online-shopping-illustration-computer-finger-poster-image_131803.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://png.pngtree.com/thumb_back/fw800/back_our/20190619/ourmid/pngtree-taobao-vector-creative-technology-online-shopping-illustration-computer-finger-poster-image_131803.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://png.pngtree.com/thumb_back/fw800/back_our/20190619/ourmid/pngtree-taobao-vector-creative-technology-online-shopping-illustration-computer-finger-poster-image_131803.jpg" class="d-block w-100" alt="...">
+                      </div>
+                    
+                    </div>
+                  </div>
+
+                  <div class="row g-3">
+                    <div *ngFor ="let i of photosData" class="col col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-2">
+
+                        <div class="card">
+                            <img src="{{}i.thumbnailUrl}" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">{{i.id}}</h5>
+                              <p class="card-text">{{i.title}}</p>
+                              <a href="buy.html" class="btn btn-primary">Buy</a>
+                            </div>
+                          </div>
+
+                    </div>
+                   
+                  
+                   
+                    
+                      </div>
+
+
+            </div>
+        </div>
+    </div>
+    
