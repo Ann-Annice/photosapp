@@ -23,9 +23,9 @@
                     <div *ngFor ="let i of photosData" class="col col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-2">
 
                         <div class="card">
-                            <img src="{}" class="card-img-top" alt="...">
+                            <img src="{{i.url}}" class="card-img-top" alt="...">
                             <div class="card-body">
-                              <h5 class="card-title"></h5>
+                              <h5 class="card-title">{{i.title}}</h5>
                               <p class="card-text"></p>
                               <a href="buy.html" class="btn btn-primary">Buy</a>
                             </div>
